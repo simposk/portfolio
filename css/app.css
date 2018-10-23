@@ -1,0 +1,172 @@
+/* Variables */
+
+:root {
+  --background: #021d43;
+  --pink: #fe3e54;
+  --skills: #d5b335;
+  --work: #021d43;
+}
+
+/* Variables */
+
+/* Fonts */
+@font-face {
+  font-family: SofiaBold;
+  src: url(../assets/SofiaBoldPro.otf);
+}
+/* Fonts */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background);
+  display: block;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: SofiaBold;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+@keyframes cursor {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: var(--pink);
+  }
+}
+
+#cursor {
+  background-color: var(--pink);
+  animation: cursor 1s infinite;
+}
+
+span.highlight {
+  color: var(--pink);
+}
+
+header {
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+header .introduction {
+  text-align: center;
+  padding-top: 15%;
+  margin-bottom: 50px;
+}
+
+header .social-links ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  padding-bottom: 150px;
+}
+
+header .social-links li {
+  display: inline;
+}
+
+header .social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+}
+
+header .social-links a:hover {
+  background: white;
+  color: var(--background);
+}
+
+header .scroll_down {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+#about {
+  contain: content;
+  background: var(--skills);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.skills-container {
+  width: 100%;
+}
+
+.skills-container article {
+  width: 33.33333333333333%;
+  float: left;
+}
+
+#work {
+  contain: content;
+  background: var(--work);
+
+  text-align: center;
+  padding: 100px 0;
+}
+
+.project {
+  margin-top: 100px;
+}
+
+.project-photo {
+  width: 100%;
+  max-width: 100%;
+  content: contain;
+}
+.project-photo img {
+  width: 55%;
+}
+
+.project-title a {
+  font-size: 30px;
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.project-title a:hover {
+  text-decoration: underline;
+}
+
+.project-description {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.project-description p {
+  color: white;
+}
